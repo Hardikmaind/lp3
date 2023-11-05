@@ -25,6 +25,7 @@ df.isna().any()
 df = df.select_dtypes(exclude=['object'])
 
 
+# .T: This transposes the result, swapping rows and columns.
 df.describe().T
 
 df.shape
