@@ -20,6 +20,11 @@ df.head()
 
 df.isna().any()
 
+
+# Assuming 'df' is your DataFrame
+df = df.select_dtypes(exclude=['object'])
+
+
 df.describe().T
 
 df.shape
